@@ -14,6 +14,7 @@
   --font-size-base: 1.125rem;
   --font-size-title-xl: 7.25rem;
 
+  --font-family-base: "IBM Plex mono", monospace;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
   --line-height-base: 1.3;
