@@ -4,6 +4,23 @@
 */
 
 :root {
-  --bg-image: url(../images/cover-image-dark.png);
-  --bg-color: ;
+  --main-bg-image: url(../images/cover-image-dark.png);
+
+  --main-bg-color: #000028;
+  --color-text-title: #000028;
+  --color-text-main: #f1b2ce;
+  --accent-color: #ff0070;
+
+  --font-size-base: 1.125rem;
+  --font-size-title-xl: 7.25rem;
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --line-height-base: 1.3;
+
+  --space-sm: 10px;
+  --space-md: 20px;
+  --space-lg: 50px;
+
+  --border-width: 1px;
 }
