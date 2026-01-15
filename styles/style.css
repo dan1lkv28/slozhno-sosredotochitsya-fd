@@ -11,18 +11,16 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  block-size: 100vh;
+  min-block-size: 100vh;
 }
 
-/* Секция HEADER */
+/* Переиспользуемые стили */
 
-.header {
-  position: relative;
-  display: grid;
-  grid-template-rows: 1fr min-content 1fr;
-  padding: var(--space-sm);
-  block-size: 100vh;
-  min-block-size: 668px;
+.text-decor {
+  color: var(--color-text-title);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-base);
+  background-color: var(--accent-color);
 }
 
 .decorated-zone::after,
@@ -45,6 +43,17 @@
   left: 10px;
   border-bottom: var(--border-width) solid var(--decorative-color);
   border-left: var(--border-width) solid var(--decorative-color);
+}
+
+/* Секция HEADER */
+
+.header {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  padding: var(--space-sm);
+  block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .header__rec-indicator {
@@ -122,12 +131,6 @@
   align-content: center;
 }
 
-.header__description {
-  color: var(--color-text-title);
-  font-weight: var(--font-weight-bold);
-  background-color: var(--accent-color);
-}
-
 /* Секция MAIN */
 
 .main {
@@ -146,13 +149,16 @@
 
 .content-section__title {
   color: var(--color-section-title);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-base);
+  background-color: transparent;
 }
 
 .content-section__items {
   display: grid;
   gap: var(--space-md);
+}
+
+.content-section__items-title {
+  font-size: var(--font-size-base);
 }
 
 .text-block {
@@ -161,16 +167,11 @@
 }
 
 .text-block__title {
-  color: var(--color-text-title);
-  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-base);
-  background-color: var(--accent-color);
 }
 
 .text-block__subtitle {
-  color: var(--color-text-title);
   font-weight: var(--font-weight-normal);
-  background-color: var(--accent-color);
 }
 
 .text-block__text {
@@ -180,7 +181,7 @@
 .text-block__link {
   border-bottom: var(--border-width) solid transparent;
   text-decoration: none;
-  text-shadow: 1px 1px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
   cursor: pointer;
 }
 
@@ -205,10 +206,7 @@
 }
 
 .focus-gallery__title {
-  color: var(--color-text-title);
-  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-base);
-  background-color: var(--accent-color);
 }
 
 .focus-gallery__items {
